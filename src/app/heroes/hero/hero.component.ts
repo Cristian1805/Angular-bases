@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 
 export class HeroComponent {
 
-  public name: string = 'Ironman'
+  public name: string = 'ironman'
   public age: number = 45;
 
   get capitalizedName():string { //Esto es una propiedad
@@ -27,6 +27,11 @@ export class HeroComponent {
 
   cambiarEdadHeroe(): void {
     this.age = 23;
+  }
+
+  resetForm(): void {
+    this.name = 'ironman'
+    this.age = 45;
   }
 
 }
